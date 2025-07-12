@@ -44,6 +44,16 @@ ul, ol {
 /* Sidebar Container */
 .sidebar {
   grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.sidebar-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 3rem;
 }
 
 /* Topbar Container */
