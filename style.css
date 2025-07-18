@@ -222,6 +222,14 @@ ul, ol {
   "projects announcements"
   "projects trending"
   ;
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+}
+
+.main-content section h2 {
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
 }
 
 .projects-section {
@@ -232,10 +240,45 @@ ul, ol {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
+  align-items: stretch;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8px;
+  border-top-left-radius: 0.95rem;
+  border-bottom-left-radius: 0.95rem;
+  background-color: orange;
+}
+
+.project-card {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--color-white);
+  padding: var(--space-lg) var(--space-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.card-content h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: 0.25rem;
+}
+
+.card-content p {
+  color: var(--color-muted);
 }
 
 .announcements-section {
   grid-area: announcements;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .announcements-box {
@@ -245,6 +288,9 @@ ul, ol {
 
 .trending-section {
   grid-area: trending;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .trending-box {
