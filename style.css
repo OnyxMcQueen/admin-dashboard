@@ -234,6 +234,8 @@ ul, ol {
 
 .projects-section {
   grid-area: projects;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .projects-grid {
@@ -274,6 +276,8 @@ ul, ol {
   color: var(--color-muted);
 }
 
+/* Announcements Section */
+
 .announcements-section {
   grid-area: announcements;
   display: grid;
@@ -284,7 +288,33 @@ ul, ol {
 .announcements-box {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--color-white);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
 }
+
+.announcement-item {
+  border-bottom: 1px solid var(--color-bg);
+  padding: var(--space-md) 0;
+}
+
+.announcement-item:last-child {
+  border-bottom: none;
+}
+
+.announcement-item h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: 0.25rem;
+}
+
+.announcement-item p {
+  color: var(--color-muted);
+}
+
+/* Trending Section */
 
 .trending-section {
   grid-area: trending;
