@@ -312,6 +312,7 @@ ul, ol {
 
 .announcement-item p {
   color: var(--color-muted);
+  font-size: var(--font-size-sm);
 }
 
 /* Trending Section */
@@ -326,5 +327,20 @@ ul, ol {
 .trending-box {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.75rem;
+  gap: 1rem;
+  justify-content: center;
+  background-color: var(--color-white);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.trending-info span {
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-sm);
+}
+
+.trending-info p {
+  color: var(--color-muted);
+  font-size: var(--font-size-base);
 }
