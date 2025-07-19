@@ -141,6 +141,13 @@ ul, ol {
   align-items: center;
 }
 
+.topbar-search {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+
 .topbar-search input {
   padding: var(--space-sm);
   border-radius: var(--border-radius);
@@ -154,6 +161,7 @@ ul, ol {
   grid-template-columns: auto auto 1fr;
   column-gap: 1rem;
   justify-content: center;
+  align-items: center;
 }
 
 .user-profile span {
@@ -267,6 +275,16 @@ ul, ol {
   position: relative;
 }
 
+.card-actions {
+  justify-self: end;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: max-content;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
 .card-content h3 {
   font-size: var(--font-size-base);
   margin-bottom: 0.25rem;
@@ -343,4 +361,27 @@ ul, ol {
 .trending-info p {
   color: var(--color-muted);
   font-size: var(--font-size-base);
+}
+
+/* Assets - Images & Icons */
+
+/* Base Icon Style */
+
+img.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: contain;
+}
+
+/* For Sidebar Icons */
+
+.sidebar-icon {
+  filter: brightness(0) invert(1);
+}
+
+
+/* For Topbar & Main Content Icons */
+
+.primary {
+  filter: none;
 }
