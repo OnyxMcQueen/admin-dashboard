@@ -217,7 +217,7 @@ ul, ol {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, auto);
-  gap: 1rem;
+  gap: 1.5rem;
   grid-template-areas: 
   "projects announcements"
   "projects trending"
@@ -241,7 +241,7 @@ ul, ol {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: stretch;
 }
 
