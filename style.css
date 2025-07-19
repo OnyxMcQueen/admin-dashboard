@@ -153,13 +153,17 @@ ul, ol {
   border-radius: var(--border-radius);
   border-style: none;
   background-color: var(--color-bg);
-  width: 90%;
+  width: 100%;
+}
+
+.topbar-user-info {
+  justify-self: end;
 }
 
 .user-profile {
   display: grid;
   grid-template-columns: auto auto 1fr;
-  column-gap: 1rem;
+  column-gap: 1.75rem;
   justify-content: center;
   align-items: center;
 }
@@ -200,7 +204,7 @@ ul, ol {
 
 .topbar-actions {
   display: grid;
-  justify-content: center;
+  justify-content: end;
 }
 
 .topbar-button-container {
@@ -345,7 +349,7 @@ ul, ol {
 .trending-box {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   background-color: var(--color-white);
   padding: var(--space-md) var(--space-lg);
@@ -384,4 +388,18 @@ img.icon {
 
 .primary {
   filter: none;
+}
+
+/* Base Image Style */
+
+img.profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+img.featured {
+  width: 80px;
+  height: 80px;
 }
