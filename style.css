@@ -7,7 +7,7 @@
 
 html, body {
   min-height: 100vh;
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-family-base), sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -42,7 +42,7 @@ ul, ol {
 
   /* Typography */
 
-  --font-family-base: sans-serif;
+  --font-family-base: 'Roboto', sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
