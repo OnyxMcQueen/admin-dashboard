@@ -97,6 +97,13 @@ ul, ol {
   row-gap: 3rem;
 }
 
+.sidebar-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
 .sidebar-header h1 {
   font-size: 1.75rem;
 }
@@ -377,7 +384,15 @@ img.icon {
   object-fit: contain;
 }
 
-/* For Sidebar Icons */
+/* Only For Dashboard Icon */
+
+img.dashboard-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+/* For Sidebar Icons EXCEPT Dashboard Icon */
 
 .sidebar-icon {
   filter: brightness(0) invert(1);
